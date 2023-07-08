@@ -1,0 +1,50 @@
+:root {
+    --navbarheight: 75px;
+}
+
+nav
+{
+    background: #917d64;
+    height: var(--navbarheight);
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    top:0
+}
+
+.logo
+{
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: var(--navbarheight);
+    margin-left: 100px;
+}
+
+nav ul
+{
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    line-height: var(--navbarheight);
+}
+
+.nav-link
+{
+    background: #736455;
+    color: #ffebd2;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 50px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.nav-link-last
+{
+    margin-right: 150px;
+}

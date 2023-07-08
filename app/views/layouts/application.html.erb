@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "main" %>
+    <%= stylesheet_link_tag "nav" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <div class="page-container">
+      <div class="content-container">
+        <%= render 'home/header' %>
+        <div class="container">
+          <%= yield %>
+        </div>
+      </div>
+      <%= render 'home/footer' %>
+    </div>
+    
+  </body>
+</html>

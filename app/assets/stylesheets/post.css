@@ -1,0 +1,57 @@
+#post-container
+{
+    background: #917d64;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    width: 60%;
+}
+
+#posts
+{
+    margin-top: 80px;
+}
+
+.post
+{   
+    background: #736455;
+    border-radius: 3px;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+#new-post
+{
+    background: #736455;
+    font-size: 40px;
+    border-radius: 5px;
+    color: rgb(57, 45, 40);
+    font-weight: bold;
+    padding: 0 5px;
+    margin: 15px;
+    position: absolute;
+}
+
+.post-description
+{
+    font-size: 20px;
+    margin: 10px 5px;
+}
+
+.view-more
+{
+    background: #b3a790;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0;
+    position: absolute;
+    text-align: right;
+}
+
+body {
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }

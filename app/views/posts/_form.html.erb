@@ -1,0 +1,31 @@
+<%= stylesheet_link_tag "postform" %>
+<%= stylesheet_link_tag "post" %>
+
+<%= form_with(model: post) do |form| %>
+
+  <div id="post-container">
+      <div>
+        <%= form.text_field :title, class: "text-box", placeholder: "Give your story a title...", id: "form-title", autocomplete: "off", rows:1 %>
+      </div>
+
+      <div>
+        <%= text_area_tag(:description, nil, class: "text-box", placeholder: "Say what's on your mind...", id: "form-description", autocomplete: "off")%>
+      </div>
+
+      <div>
+        <%= form.submit %>
+      </div>
+  </div>
+  
+  <% if post.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+        <% post.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<% end %>
