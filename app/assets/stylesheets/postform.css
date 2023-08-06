@@ -1,15 +1,12 @@
-#form-title::placeholder
-{
+#form-title::placeholder{
     color: rgb(75, 75, 75)
 }
 
-#form-description::placeholder
-{
-    color: rgb(100, 100, 100)
+#form-description::placeholder{
+    color: rgb(147, 147, 147)
 }
 
-.text-box
-{
+.text-box{
     background: transparent;
     font-family: "Century Gothic";
     color: black;
@@ -18,17 +15,31 @@
     width: 100%;
 }
 
-#form-title
-{   
+#form-title{   
     font-weight: bold;
     font-size: 50px;
 }
 
-#form-description
-{
+#form-description{
+    background: #736455;
+    border-radius: 3px;
+    padding: 15px;
     margin-top: 5px;
     font-size: 30px;
-    min-height: 500px;
+    min-height: 360px;
     resize: vertical;
     white-space: pre-wrap;
+}
+
+#form-submit{
+    background: #ab937b;
+    font-size: 40px;
+    border-radius: 5px;
+    border-style: hidden;
+    font-family: "Century Gothic";
+    color: #e5e5e5;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 0 5px;
+    cursor: pointer;
 }

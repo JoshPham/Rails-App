@@ -1,9 +1,24 @@
-<div id="<%= dom_id post %>">
-  <h1 class="post-title"><%= post.title %></h1>
+<div id="<%= dom_id post %>"> 
+  <% if request.original_fullpath == "/posts" %>
+    <h1 class="post-title"><%= post.title %></h1>
 
-  <% if post.description %>
-    <p class="post-description">
-      <%= post.description %>
-    </p>
+    <% if post.description %>
+      <p class="post-description">
+        <%= post.description %>
+      </p>
+    <% end %>
+    
+  <% else %>
+
+    <h1 id="view-title"><%= post.title %></h1>
+
+    <% if post.description %>
+      <div id="view-description-box">
+        <p id="view-description">
+          <%= post.description %>
+        </p>
+      </div>
+    <% end %>
+
   <% end %>
 </div>

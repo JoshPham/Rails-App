@@ -33,3 +33,8 @@ body
     height: 150px;
     background: #564a3b;
 }
+
+.rotate-cc
+{
+    transform: rotate(-0.25turn);
+}

@@ -1,0 +1,52 @@
+#view-title{
+    margin-top: 5px;
+    font-size: 40px;
+}
+
+#view-description-box{
+    background: #736455;
+    border-radius: 3px;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+#view-description{
+    font-size: 20px;
+    min-height: 300px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#back-button{
+    background: #736455;
+    font-size: 40px;
+    border-radius: 5px;
+    color: rgb(57, 45, 40);
+    font-weight: bold;
+    padding: 0 5px;
+    margin-right: auto;
+}
+
+#edit-button{
+    background: #736455;
+    font-size: 40px;
+    border-radius: 5px;
+    color: #b5a898;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+#delete-button{
+    background: #736455;
+    font-size: 40px;
+    border-radius: 5px;
+    border-style: hidden;
+    font-family: "Century Gothic";
+    color: #d17373;
+    font-weight: bold;
+    margin-left: 15px;
+    cursor: pointer;
+}

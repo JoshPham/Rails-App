@@ -2,8 +2,7 @@
     --navbarheight: 75px;
 }
 
-nav
-{
+nav{
     background: #917d64;
     height: var(--navbarheight);
     width: 100%;
@@ -12,8 +11,7 @@ nav
     top:0
 }
 
-.logo
-{
+.logo{
     color: black;
     font-size: 40px;
     font-weight: bolder;
@@ -21,30 +19,26 @@ nav
     margin-left: 100px;
 }
 
-nav ul
-{
+nav ul{
     float: right;
-    margin-right: 30px;
+    margin-right: 100px;
 }
 
-nav ul li
-{
+nav ul li{
     display: inline-block;
     line-height: var(--navbarheight);
 }
 
-.nav-link
-{
+.nav-link{
     background: #736455;
     color: #ffebd2;
     font-size: 20px;
     font-weight: bold;
-    margin: 0 50px;
+    margin: 0 30px;
     padding: 5px 10px;
     border-radius: 3px;
 }
 
-.nav-link-last
-{
+.nav-link-last{
     margin-right: 150px;
 }

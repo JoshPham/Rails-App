@@ -1,10 +1,14 @@
+<%= stylesheet_link_tag "post" %>
+<%= stylesheet_link_tag "view_post" %>
+
 <p style="color: green"><%= notice %></p>
+<div class="post-container">
+  <div class="button-container">
+    <%= link_to "Back to posts", posts_path, id:"back-button" %>
+    <%= link_to "Edit", edit_post_path(@post), id:"edit-button"%>
+    <%= button_to "Delete", @post, method: :delete, id:"delete-button" %>
+  </div>
 
-<%= render @post %>
+  <%= render @post %>
 
-<div>
-  <%= link_to "Edit this post", edit_post_path(@post) %> |
-  <%= link_to "Back to posts", posts_path %>
-
-  <%= button_to "Destroy this post", @post, method: :delete %>
 </div>

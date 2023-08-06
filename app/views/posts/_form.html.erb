@@ -1,20 +1,32 @@
 <%= stylesheet_link_tag "postform" %>
 <%= stylesheet_link_tag "post" %>
+<%= stylesheet_link_tag "view_post" %>
 
 <%= form_with(model: post) do |form| %>
 
-  <div id="post-container">
-      <div>
-        <%= form.text_field :title, class: "text-box", placeholder: "Give your story a title...", id: "form-title", autocomplete: "off", rows:1 %>
+  <div class="post-container">
+    <% if request.original_fullpath != "/posts/new" %>
+      <div class="button-container">
+        <%= link_to "Back to posts", posts_path, id:"back-button" %>
+        <%= link_to "Show post", @post, id:"edit-button" %>
       </div>
+    <% end %>
+    <div>
+      <%= form.text_field :title, class: "text-box", placeholder: "Give your story a title...", id: "form-title", autocomplete: "off", rows:1 %>
+    </div>
 
+    <div>
+      <%= form.text_area :description, class: "text-box", placeholder: "Say what's on your mind...", id: "form-description", autocomplete: "off" %>
+    </div>
+    <% if request.original_fullpath == "/posts/new" %>
       <div>
-        <%= text_area_tag(:description, nil, class: "text-box", placeholder: "Say what's on your mind...", id: "form-description", autocomplete: "off")%>
+        <%= form.submit value:"Post", id:"form-submit" %>
       </div>
-
+    <% else %>
       <div>
-        <%= form.submit %>
+        <%= form.submit value:"Update", id:"form-submit" %>
       </div>
+    <% end %>
   </div>
   
   <% if post.errors.any? %>
