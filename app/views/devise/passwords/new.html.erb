@@ -1,4 +1,4 @@
-<%= stylesheet_link_tag "userforms" %>
+<%= stylesheet_link_tag "userform" %>
 
 <div class="prompt-container">
   <h1 id="prompt-title">Forgot your password?</h1>
@@ -9,7 +9,7 @@
 
       <div class="field">
         <%= f.label :email, id:"form-title" %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"entry-box" %>
       </div>
 
       <div class="actions">

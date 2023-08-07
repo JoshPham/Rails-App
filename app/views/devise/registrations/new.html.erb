@@ -1,4 +1,4 @@
-<%= stylesheet_link_tag "userforms" %>
+<%= stylesheet_link_tag "userform" %>
 
 <div class="prompt-container">
   <h1 id="prompt-title">New User Account</h1>
@@ -9,7 +9,12 @@
       
       <div class="field">
         <%= f.label :email, id:"form-title" %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"entry-box" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :username, id:"form-title" %><br />
+        <%= f.text_field :username, autofocus: true, class:"entry-box" %>
       </div>
 
       <div class="field">
@@ -17,12 +22,12 @@
         <% if @minimum_password_length %>
         <em id="form-title" >(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
-        <%= f.password_field :password, autocomplete: "new-password" %>
+        <%= f.password_field :password, autocomplete: "new-password", class:"entry-box" %>
       </div>
 
       <div class="field">
         <%= f.label :password_confirmation, id:"form-title" %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"entry-box" %>
       </div>
 
       <div class="actions">

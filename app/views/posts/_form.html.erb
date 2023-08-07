@@ -1,6 +1,5 @@
 <%= stylesheet_link_tag "postform" %>
 <%= stylesheet_link_tag "post" %>
-<%= stylesheet_link_tag "viewpost" %>
 
 <%= form_with(model: post) do |form| %>
 
@@ -8,7 +7,7 @@
       <div class="button-container">
         <%= link_to "Back to posts", posts_path, id:"back-button" %>
         <% if request.original_fullpath != "/posts/new" %>
-          <%= link_to "Show post", @post, id:"edit-button" %>
+          <%= link_to "Show post", @post, id:"show-button" %>
         <% end %>
       </div>
     <div>
