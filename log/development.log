@@ -35875,3 +35875,117 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 5963)
 
 
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-08-07 05:05:00 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 252)
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 659)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 128.4ms | Allocations: 62712)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 656)
+  Rendered home/_footer.html.erb (Duration: 0.2ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 142.1ms | Allocations: 77411)
+Completed 200 OK in 165ms (Views: 148.1ms | ActiveRecord: 1.4ms | Allocations: 89127)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-08-07 05:05:01 +0000
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 103)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 308)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3458)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 4170)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-08-07 05:05:02 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 303)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2918)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 262)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 5817)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 7112)
+
+
+Started GET "/posts" for 127.0.0.1 at 2023-08-07 05:05:03 +0000
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.5ms | Allocations: 375)
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 5186)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 280)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 8276)
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 1.0ms | Allocations: 10547)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-08-07 05:05:03 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 164)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2026)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 237)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 4864)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 5475)
+
+
+Started GET "/posts" for 127.0.0.1 at 2023-08-07 05:05:04 +0000
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1565)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 261)
+  Rendered home/_footer.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4643)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 4919)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-08-07 05:05:05 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 164)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2037)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 237)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4893)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 5520)
+
+
+Started GET "/home/about" for 127.0.0.1 at 2023-08-07 05:05:07 +0000
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 271)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3243)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 3506)
+
+
+Started GET "/posts" for 127.0.0.1 at 2023-08-07 05:05:07 +0000
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:7
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1559)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 261)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4588)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 4862)
+
+
