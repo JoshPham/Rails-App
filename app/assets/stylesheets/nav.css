@@ -19,24 +19,28 @@ nav{
     margin-left: 100px;
 }
 
-nav ul{
-    float: right;
-    margin-right: 100px;
-}
-
 nav ul li{
     display: inline-block;
     line-height: var(--navbarheight);
 }
 
+.nav-link-container{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    float: right;
+}
+
 .nav-link{
     background: #736455;
     color: #ffebd2;
+    font-family: "Century Gothic";
     font-size: 20px;
     font-weight: bold;
-    margin: 0 30px;
     padding: 5px 10px;
+    border-style: hidden;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .nav-link-last{

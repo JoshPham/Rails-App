@@ -1,16 +1,16 @@
 <%= stylesheet_link_tag "postform" %>
 <%= stylesheet_link_tag "post" %>
-<%= stylesheet_link_tag "view_post" %>
+<%= stylesheet_link_tag "viewpost" %>
 
 <%= form_with(model: post) do |form| %>
 
   <div class="post-container">
-    <% if request.original_fullpath != "/posts/new" %>
       <div class="button-container">
         <%= link_to "Back to posts", posts_path, id:"back-button" %>
-        <%= link_to "Show post", @post, id:"edit-button" %>
+        <% if request.original_fullpath != "/posts/new" %>
+          <%= link_to "Show post", @post, id:"edit-button" %>
+        <% end %>
       </div>
-    <% end %>
     <div>
       <%= form.text_field :title, class: "text-box", placeholder: "Give your story a title...", id: "form-title", autocomplete: "off", rows:1 %>
     </div>

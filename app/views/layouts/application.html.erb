@@ -15,9 +15,12 @@
     <div class="page-container">
       <div class="content-container">
         <%= render 'home/header' %>
-        <div class="container">
+        <main class="container">
+          <p class="notice"><%= notice %></p>
+          <p class="alert"><%= alert %></p>
+
           <%= yield %>
-        </div>
+        </main>
       </div>
       <%= render 'home/footer' %>
     </div>
