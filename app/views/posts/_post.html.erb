@@ -1,6 +1,9 @@
+<% user_id = post.user_id %>
+
 <div id="<%= dom_id post %>"> 
-  <% if request.original_fullpath == "/posts" %>
-    <h1 class="post-title"><%= post.title %></h1>
+  <% if request.original_fullpath == posts_path %>
+    <h1 class="username" >@<%= User.find_by(id: user_id).username %></h1>
+    <h2 class="post-title" style="margin: 5px 0;"><%= post.title %></h2>
 
     <% if post.description %>
       <p class="post-description">
@@ -10,7 +13,8 @@
     
   <% else %>
 
-    <h1 id="view-title"><%= post.title %></h1>
+    <h1 class="username" >@<%= User.find_by(id: user_id).username %></h1>
+    <h2 id="view-title"><%= post.title %></h2>
 
     <% if post.description %>
       <div id="view-description-box">

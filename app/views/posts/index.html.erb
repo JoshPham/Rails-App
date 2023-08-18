@@ -1,7 +1,10 @@
 <%= stylesheet_link_tag "post" %>
 
 <div class="post-container">
+  <% if user_signed_in? %>
     <%= link_to "New Blog", new_post_path, id: "new-post"%>
+  <% end %>
+  <h1>Blogs</h1>
 
   <div id="posts">
     <% @posts.each do |post| %>

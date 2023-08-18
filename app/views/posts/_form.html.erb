@@ -5,8 +5,8 @@
 
   <div class="post-container">
       <div class="button-container">
-        <%= link_to "Back to posts", posts_path, id:"back-button" %>
-        <% if request.original_fullpath != "/posts/new" %>
+        <%= link_to "Back", :back, id:"back-button" %>
+        <% if request.original_fullpath != new_post_path %>
           <%= link_to "Show post", @post, id:"show-button" %>
         <% end %>
       </div>
@@ -17,7 +17,10 @@
     <div>
       <%= form.text_area :description, class: "text-box", placeholder: "Say what's on your mind...", id: "form-description", autocomplete: "off" %>
     </div>
-    <% if request.original_fullpath == "/posts/new" %>
+
+    <%= form.hidden_field :user_id, value: current_user.id %>
+    
+    <% if request.original_fullpath == new_post_path %>
       <div>
         <%= form.submit value:"Post", id:"form-submit" %>
       </div>

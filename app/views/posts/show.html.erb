@@ -1,12 +1,15 @@
 <%= stylesheet_link_tag "post" %>
 <%= stylesheet_link_tag "viewpost" %>
 
-<p style="color: green"><%= notice %></p>
 <div class="post-container">
   <div class="button-container">
     <%= link_to "Back to posts", posts_path, id:"back-button" %>
-    <%= link_to "Edit", edit_post_path(@post), id:"edit-button"%>
-    <%= button_to "Delete", @post, method: :delete, id:"delete-button" %>
+    <% if user_signed_in? %>
+      <% if current_user.id == @post.user_id %>
+        <%= link_to "Edit", edit_post_path(@post), id:"edit-button"%>
+        <%= button_to "Delete", @post, method: :delete, id:"delete-button" %>
+      <% end %>
+    <% end %>
   </div>
 
   <%= render @post %>

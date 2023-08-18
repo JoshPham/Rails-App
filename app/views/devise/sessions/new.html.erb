@@ -1,24 +1,24 @@
 <%= stylesheet_link_tag "userform" %>
 
 <div class="prompt-container">
-  <h1 id="prompt-title">User Login</h1>
+  <h1 id="prompt-title" class="unselectable">User Login</h1>
 
   <div id="form-box">
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field">
-        <%= f.label :email, id:"form-title" %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"entry-box" %>
+        <%= f.label :Username_or_Email, value:"Username or Email", id:"form-title", class:"unselectable" %>
+        <%= f.text_field :login, autofocus: true, class:"entry-box" %>
       </div>
       
       <div class="field">
-        <%= f.label :password, id:"form-title" %><br />
+        <%= f.label :password, id:"form-title", class:"unselectable" %><br />
         <%= f.password_field :password, autocomplete: "current-password", class:"entry-box" %>
       </div>
 
       <% if devise_mapping.rememberable? %>
-        <div class="field">
+        <div class="field remember-me-container">
           <%= f.check_box :remember_me %>
-          <%= f.label :remember_me, id:"form-title" %>
+          <%= f.label :remember_me, id:"form-title", class:"unselectable" %>
         </div>
       <% end %>
 

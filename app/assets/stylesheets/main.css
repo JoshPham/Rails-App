@@ -38,3 +38,7 @@ body
 {
     transform: rotate(-0.25turn);
 }
+
+.unselectable {
+    user-select: none;
+}

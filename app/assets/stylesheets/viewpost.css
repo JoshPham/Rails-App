@@ -1,5 +1,4 @@
 #view-title{
-    margin-top: 5px;
     font-size: 40px;
 }
 
@@ -22,6 +21,7 @@
     color: #b5a898;
     font-weight: bold;
     padding: 0 5px;
+    display: block;
 }
 
 #delete-button{
@@ -33,5 +33,8 @@
     color: #d17373;
     font-weight: bold;
     margin-left: 15px;
+    padding: 5px 3px;
+    padding-top: 0;
     cursor: pointer;
+    display: block;
 }

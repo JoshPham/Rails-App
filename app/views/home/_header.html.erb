@@ -15,7 +15,7 @@
                 <%= link_to "Create New Blog", new_post_path, class: "nav-link" %>
             </li>
             <li>
-                <%= link_to "#{current_user.username}", edit_user_registration_path, class: "nav-link username" %>
+                <%= link_to "#{current_user.username}", edit_user_registration_path, class: "nav-link edit-account" %>
             </li>
             <li>
                 <%= button_to "Log Out", destroy_user_session_path, :method => :delete, class: "nav-link", style:"background-color: #312a22;" %>
